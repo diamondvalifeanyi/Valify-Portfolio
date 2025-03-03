@@ -1,0 +1,145 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Valify </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> Valentine Ifeanyi </h1>
+            <p class="title">Backend Developer</p>
+            
+            <div class="toggle-container">
+                <!-- <div class="toggle-label">About</div> -->
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider round"></span>
+                </label>
+                <!-- <div class="toggle-label">Projects</div> -->
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="aboutSection" class="section active">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <!-- <div class="profile-pic">
+                    <div class="avatar-placeholder"></div>
+                </div> -->
+                <div class="about-text">
+                    <p>I'm a passionate backend web developer proficient in JavaScript, TypeScript, and Node.js. I focus on building robust, scalable, and efficient server-side applications.</p>
+                    
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li><span>JavaScript</span></li>
+                        <li><span>TypeScript</span></li>
+                        <li><span>Node.js</span></li>
+                        <li><span>Express</span></li>
+                        <li><span>MongoDB</span></li>
+                        <li><span>PostgreSQL</span></li>
+                        <li><span>RESTful APIs</span></li>
+                        <!-- <li><span>GraphQL</span></li>
+                        <li><span>Docker</span></li> -->
+                        <li><span>Git</span></li>
+                    </ul>
+                    
+                    <h3>Experience</h3>
+                    <div class="experience-item">
+                        <h4> Backend Developer(Volunteer Role)</h4>
+                        <p class="company">Code Tech Organisation</p>
+                        <p>Developed RESTFul API's using NodeJS and Express</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4>Backend Developer</h4>
+                        <p class="company">ZumBox Technologies</p>
+                        <p>Added Features to already existing E-Commerce API, and collaborated with front-end developers to create seamless user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projectsSection" class="section">
+            <h2>My Projects</h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>MedVault</h3>
+                    <p class="project-tech">Node.js, Express, MongoDB</p>
+                    <p>A scalable RESTful API for Health Record Management.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/TegaJeremy/Medvault" target="_blank" class="btn">GitHub</a>
+                        <a href="https://medvault-xixt.onrender.com/" target="_blank" class="btn">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Proconnect</h3>
+                    <p class="project-tech">Node.js, Next.js, MongoDB</p>
+                    <p>A comprehensive Job and Recruiting PlatForm</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Techeritage/proconnect" target="_blank" class="btn">GitHub</a>
+                        <a href="https://proconnect-eight.vercel.app/" target="_blank" class="btn">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Card Request API</h3>
+                    <p class="project-tech">Node.js, Express, PostgreSQL</p>
+                    <p>A flexible card request API.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/diamondvalifeanyi/backendCoreInfra" target="_blank" class="btn">GitHub</a>
+                        <a href="https://backendcoreinfra.onrender.com/" target="_blank" class="btn">API</a>
+                    </div>
+                </div>
+                
+                <!-- <div class="project-card">
+                    <h3>Authentication Microservice</h3>
+                    <p class="project-tech">TypeScript, Node.js, JWT</p> -->
+                    <!-- <p>A secure authentication microservice with multi-factor authentication, OAuth integration, and comprehensive access control.</p> -->
+                    <!-- <div class="project-links">
+                        <a href="#" class="btn">GitHub</a>
+                        <a href="#" class="btn">Documentation</a>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Valify. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/diamondvalifeanyi" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="social-link">LinkedIn</a>
+                <!-- <a href="#" class="social-link">Twitter</a> -->
+                <a href="https://diamondvalifeanyi001@gmail.com" target="_blank" class="social-link">Email</a>
+                <a href="https://wa.link/2gydiq" target="_blank" class="social-link">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggleSwitch = document.getElementById('toggleSwitch');
+        const aboutSection = document.getElementById('aboutSection');
+        const projectsSection = document.getElementById('projectsSection');
+
+        toggleSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                aboutSection.classList.remove('active');
+                projectsSection.classList.add('active');
+            } else {
+                aboutSection.classList.add('active');
+                projectsSection.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
